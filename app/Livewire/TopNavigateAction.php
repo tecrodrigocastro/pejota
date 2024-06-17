@@ -16,6 +16,7 @@ use Livewire\Component;
 class TopNavigateAction extends Component implements HasActions
 {
     use InteractsWithActions;
+
     public function render()
     {
         return view('livewire.top-navigate-action');
@@ -38,6 +39,7 @@ class TopNavigateAction extends Component implements HasActions
                 TaskResource\Pages\CreateTask::getUrl()
             );
     }
+
     public function createSession(array|string $name = 'Create Session'): ?Action
     {
         return Action::make($name)
